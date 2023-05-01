@@ -48,6 +48,9 @@ if (document.cookie) {
     JSON.parse(sessionStorage.getItem("formData")).email
   }`;
 }
-if (window.location.pathname === "/successPage.html" && !document.cookie) {
-  window.location = "index.html";
+if (
+  window.location.pathname === "/authentication/successPage.html" &&
+  !document.cookie
+) {
+  window.location.pathname = "/authentication/successPage.html";
 }
