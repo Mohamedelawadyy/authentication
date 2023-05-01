@@ -49,5 +49,5 @@ if (document.cookie) {
   }`;
 }
 if (window.location.pathname === "/successPage.html" && !document.cookie) {
-  window.location = "/index.html";
+  window.location = "index.html";
 }
