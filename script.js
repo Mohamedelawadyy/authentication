@@ -48,9 +48,10 @@ if (document.cookie) {
     JSON.parse(sessionStorage.getItem("formData")).email
   }`;
 }
+const currentDomain = window.location.host;
 if (
-  window.location.pathname === "/authentication/successPage.html" &&
-  !document.cookie
+  !document.cookie &&
+  window.location.href == `http://${currentDomain}/successPage.html`
 ) {
-  window.location.pathname = "/authentication/index.html";
+  window.location.href = `http://${currentDomain}/index.html`;
 }
