@@ -52,5 +52,5 @@ if (
   window.location.pathname === "/authentication/successPage.html" &&
   !document.cookie
 ) {
-  window.location.pathname = "/authentication/successPage.html";
+  window.location.pathname = "/authentication/index.html";
 }
